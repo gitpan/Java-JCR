@@ -1,6 +1,6 @@
 ---
 name: Java-JCR
-version: 0.02
+version: 0.03
 author:
   - 'Andrew Sterling Hanenkamp, E<lt>hanenkamp@cpan.orgE<gt>'
 abstract: Use JSR 170 (JCR) repositories from Perl
@@ -13,39 +13,40 @@ requires:
 provides:
   Java::JCR:
     file: lib/Java/JCR.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::AccessDeniedException:
     file: lib/Java/JCR/AccessDeniedException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Base:
     file: lib/Java/JCR/Base.pm
     version: 0.02
   Java::JCR::Credentials:
     file: lib/Java/JCR/Credentials.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::ImportUUIDBehavior:
     file: lib/Java/JCR/ImportUUIDBehavior.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::InvalidItemStateException:
     file: lib/Java/JCR/InvalidItemStateException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::InvalidSerializedDataException:
     file: lib/Java/JCR/InvalidSerializedDataException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Item:
     file: lib/Java/JCR/Item.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::ItemExistsException:
     file: lib/Java/JCR/ItemExistsException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::ItemNotFoundException:
     file: lib/Java/JCR/ItemNotFoundException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::ItemVisitor:
     file: lib/Java/JCR/ItemVisitor.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Jackrabbit:
     file: lib/Java/JCR/Jackrabbit.pm
+    version: 0.03
   Java::JCR::JavaUtils:
     file: lib/Java/JCR/JavaUtils.pm
     version: 0.01
@@ -54,169 +55,169 @@ provides:
     version: 0.01
   Java::JCR::Lock::Lock:
     file: lib/Java/JCR/Lock/Lock.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Lock::LockException:
     file: lib/Java/JCR/Lock/LockException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::LoginException:
     file: lib/Java/JCR/LoginException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::MergeException:
     file: lib/Java/JCR/MergeException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::NamespaceException:
     file: lib/Java/JCR/NamespaceException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::NamespaceRegistry:
     file: lib/Java/JCR/NamespaceRegistry.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::NoSuchWorkspaceException:
     file: lib/Java/JCR/NoSuchWorkspaceException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Node:
     file: lib/Java/JCR/Node.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::NodeIterator:
     file: lib/Java/JCR/NodeIterator.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Nodetype:
     file: lib/Java/JCR/Nodetype.pm
     version: 0.01
   Java::JCR::Nodetype::ConstraintViolationException:
     file: lib/Java/JCR/Nodetype/ConstraintViolationException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Nodetype::ItemDefinition:
     file: lib/Java/JCR/Nodetype/ItemDefinition.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Nodetype::NoSuchNodeTypeException:
     file: lib/Java/JCR/Nodetype/NoSuchNodeTypeException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Nodetype::NodeDefinition:
     file: lib/Java/JCR/Nodetype/NodeDefinition.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Nodetype::NodeType:
     file: lib/Java/JCR/Nodetype/NodeType.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Nodetype::NodeTypeIterator:
     file: lib/Java/JCR/Nodetype/NodeTypeIterator.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Nodetype::NodeTypeManager:
     file: lib/Java/JCR/Nodetype/NodeTypeManager.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Nodetype::PropertyDefinition:
     file: lib/Java/JCR/Nodetype/PropertyDefinition.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Observation:
     file: lib/Java/JCR/Observation.pm
     version: 0.01
   Java::JCR::Observation::Event:
     file: lib/Java/JCR/Observation/Event.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Observation::EventIterator:
     file: lib/Java/JCR/Observation/EventIterator.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Observation::EventListener:
     file: lib/Java/JCR/Observation/EventListener.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Observation::EventListenerIterator:
     file: lib/Java/JCR/Observation/EventListenerIterator.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Observation::ObservationManager:
     file: lib/Java/JCR/Observation/ObservationManager.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::PathNotFoundException:
     file: lib/Java/JCR/PathNotFoundException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Property:
     file: lib/Java/JCR/Property.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::PropertyIterator:
     file: lib/Java/JCR/PropertyIterator.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::PropertyType:
     file: lib/Java/JCR/PropertyType.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Query:
     file: lib/Java/JCR/Query.pm
     version: 0.01
   Java::JCR::Query::InvalidQueryException:
     file: lib/Java/JCR/Query/InvalidQueryException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Query::Query:
     file: lib/Java/JCR/Query/Query.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Query::QueryManager:
     file: lib/Java/JCR/Query/QueryManager.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Query::QueryResult:
     file: lib/Java/JCR/Query/QueryResult.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Query::Row:
     file: lib/Java/JCR/Query/Row.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Query::RowIterator:
     file: lib/Java/JCR/Query/RowIterator.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::RangeIterator:
     file: lib/Java/JCR/RangeIterator.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::ReferentialIntegrityException:
     file: lib/Java/JCR/ReferentialIntegrityException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Repository:
     file: lib/Java/JCR/Repository.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::RepositoryException:
     file: lib/Java/JCR/RepositoryException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Session:
     file: lib/Java/JCR/Session.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::SimpleCredentials:
     file: lib/Java/JCR/SimpleCredentials.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::UnsupportedRepositoryOperationException:
     file: lib/Java/JCR/UnsupportedRepositoryOperationException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Util:
     file: lib/Java/JCR/Util.pm
     version: 0.01
   Java::JCR::Util::TraversingItemVisitor:
     file: lib/Java/JCR/Util/TraversingItemVisitor.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Util::TraversingItemVisitor::Default:
     file: lib/Java/JCR/Util/TraversingItemVisitor/Default.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Value:
     file: lib/Java/JCR/Value.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::ValueFactory:
     file: lib/Java/JCR/ValueFactory.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::ValueFormatException:
     file: lib/Java/JCR/ValueFormatException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Version:
     file: lib/Java/JCR/Version.pm
     version: 0.01
   Java::JCR::Version::OnParentVersionAction:
     file: lib/Java/JCR/Version/OnParentVersionAction.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Version::Version:
     file: lib/Java/JCR/Version/Version.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Version::VersionException:
     file: lib/Java/JCR/Version/VersionException.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Version::VersionHistory:
     file: lib/Java/JCR/Version/VersionHistory.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Version::VersionIterator:
     file: lib/Java/JCR/Version/VersionIterator.pm
-    version: 0.02
+    version: 0.03
   Java::JCR::Workspace:
     file: lib/Java/JCR/Workspace.pm
-    version: 0.02
+    version: 0.03
 generated_by: Module::Build version 0.28
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
