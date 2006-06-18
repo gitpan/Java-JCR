@@ -11,6 +11,7 @@ inc/packages.yml
 inc/specials.yml
 lib/Java/JCR.pm
 lib/Java/JCR/Base.pm
+lib/Java/JCR/Calendar.pm
 lib/Java/JCR/Credentials.pm
 lib/Java/JCR/Exception.pm
 lib/Java/JCR/ImportUUIDBehavior.pm
@@ -70,3 +71,5 @@ t/03-jackrabbit-anonymous.t
 t/04-jackrabbit-add-node.t
 t/05-jackrabbit-multiple.t
 t/06-jackrabbit-exception.t
+t/07-jackrabbit-calendar.t
+

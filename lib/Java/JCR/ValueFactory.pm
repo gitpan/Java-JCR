@@ -13,7 +13,7 @@ use warnings;
 
 use base qw( Java::JCR::Base );
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 use Carp;
 use Inline (
@@ -26,12 +26,21 @@ study_classes(['javax.jcr.ValueFactory'], 'Java::JCR');
 
 sub create_value {
     my $self = shift;
-    my @args = Java::JCR::Base::_process_args(@_);
+    my ($value) = @_;
+
+    my @args;
+    if (Java::JCR::Calendar::_perl_date_has_conversion($value)) {
+        @args = (Java::JCR::Calendar::_perl_date_to_java_calendar($value));
+    }
+
+    else {
+        @args = Java::JCR::Base::_process_args(@_);
+    }
 
     my $result = eval { $self->{obj}->createValue(@args) };
     if ($@) { my $e = Java::JCR::Exception->new($@); croak $e }
 
-    return Java::JCR::Base::_process_return($result, "javax.jcr.Value", "Java::JCR::Value");
+    return Java::JCR::Base::_process_return($result, 'javax.jcr.Value', 'Java::JCR::Value');
 }
 
 1;

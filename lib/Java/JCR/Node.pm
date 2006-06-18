@@ -13,7 +13,7 @@ use warnings;
 
 use base qw( Java::JCR::Base Java::JCR::Item );
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 use Carp;
 use Inline (
@@ -156,12 +156,21 @@ sub refresh {
 
 sub set_property {
     my $self = shift;
-    my @args = Java::JCR::Base::_process_args(@_);
+    my ($name, $value) = @_;
+
+    my @args;
+    if (Java::JCR::Calendar::_perl_date_has_conversion($value)) {
+        @args = ($name, Java::JCR::Calendar::_perl_date_to_java_calendar($value));
+    }
+
+    else {
+        @args = Java::JCR::Base::_process_args(@_);
+    }
 
     my $result = eval { $self->{obj}->setProperty(@args) };
     if ($@) { my $e = Java::JCR::Exception->new($@); croak $e }
 
-    return Java::JCR::Base::_process_return($result, "javax.jcr.Property", "Java::JCR::Property");
+    return Java::JCR::Base::_process_return($result, 'javax.jcr.Property', 'Java::JCR::Property');
 }
 
 sub is_node {

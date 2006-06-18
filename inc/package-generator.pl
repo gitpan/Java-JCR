@@ -23,7 +23,7 @@ use File::Basename;
 use File::Path;
 use YAML;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 our $PACKAGE_NAME = "Java::JCR";
 

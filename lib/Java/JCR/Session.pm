@@ -13,7 +13,7 @@ use warnings;
 
 use base qw( Java::JCR::Base );
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 use Carp;
 use Inline (
@@ -64,7 +64,6 @@ sub import_xml {
 
     $self->{obj}->importXML($path, $input_stream, $behavior);
 }
-        
 
 sub remove_lock_token {
     my $self = shift;

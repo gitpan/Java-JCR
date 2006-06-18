@@ -13,7 +13,7 @@ use warnings;
 
 use base qw( Java::JCR::Base Java::JCR::Item );
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 use Carp;
 use Inline (
@@ -95,13 +95,11 @@ sub get_boolean {
 }
 
 sub get_date {
-    my $self = shift;
-    my @args = Java::JCR::Base::_process_args(@_);
+    my ($self, $class) = @_;
 
-    my $result = eval { $self->{obj}->getDate(@args) };
-    if ($@) { my $e = Java::JCR::Exception->new($@); croak $e }
+    my $result = $self->{obj}->getDate();
 
-    return $result;
+    return Java::JCR::Calendar::_java_calendar_to_perl_date($result, $class);
 }
 
 sub get_ancestor {

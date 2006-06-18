@@ -13,7 +13,7 @@ use warnings;
 
 use base qw( Java::JCR::Base Java::JCR::ItemVisitor );
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 use Carp;
 use Inline (
