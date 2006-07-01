@@ -72,4 +72,6 @@ t/04-jackrabbit-add-node.t
 t/05-jackrabbit-multiple.t
 t/06-jackrabbit-exception.t
 t/07-jackrabbit-calendar.t
+t/08-jackrabbit-nodetypes.t
+t/nodetypes.cnd
 

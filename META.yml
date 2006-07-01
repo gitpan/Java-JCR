@@ -1,6 +1,6 @@
 ---
 name: Java-JCR
-version: 0.05
+version: 0.06
 author:
   - 'Andrew Sterling Hanenkamp, E<lt>hanenkamp@cpan.orgE<gt>'
 abstract: Use JSR 170 (JCR) repositories from Perl
@@ -13,7 +13,7 @@ requires:
 provides:
   Java::JCR:
     file: lib/Java/JCR.pm
-    version: 0.05
+    version: 0.06
   Java::JCR::Base:
     file: lib/Java/JCR/Base.pm
     version: 0.02
@@ -37,7 +37,7 @@ provides:
     version: 0.05
   Java::JCR::Jackrabbit:
     file: lib/Java/JCR/Jackrabbit.pm
-    version: 0.03
+    version: 0.06
   Java::JCR::JavaUtils:
     file: lib/Java/JCR/JavaUtils.pm
     version: 0.01
