@@ -21,7 +21,7 @@ This class is used internally only and provides no functionality beyond what is 
 sub _process_args {
     my @args;
     for my $arg (@_) {
-        if (UNIVERSAL::isa($arg, 'Java::JCR::Base')) {
+        if (blessed $arg && $arg->isa('Java::JCR::Base')) {
             push @args, $arg->{obj};
         }
         else {

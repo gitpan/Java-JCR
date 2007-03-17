@@ -76,4 +76,3 @@ t/08-jackrabbit-nodetypes.t
 t/09-jackrabbit-timezone.t
 t/10-property-type.t
 t/nodetypes.cnd
-
